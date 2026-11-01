@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscription — Dar Culture</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="validation.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="../images/logo white.png" alt="Dar Culture" width="160">
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="Apropos.html">À propos</a>
+      <a href="inscription.html">Inscription</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <p class="info">
+    La balise &lt;nav&gt; regroupe les liens du menu.
+    Contrairement à une &lt;div&gt;, elle identifie une zone de navigation pour les lecteurs d’écran.
+  </p>
+  <main>
+    <section>
+      <h1>Inscription</h1>
+      <form id="inscriptionForm">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required minlength="2">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required aria-describedby="emailErrorIns">
+        <p id="emailErrorIns" class="error" aria-live="polite"></p>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+    <section>
+      <h2>Nos ateliers</h2>
+      <img src="../images/Atelier.png" alt="Atelier culturel" width="700">
+    </section>
+  </main>
+  <footer>© Dar Culture — Tous droits réservés.</footer>
+</body>
+</html>
